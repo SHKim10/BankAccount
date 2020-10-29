@@ -43,6 +43,10 @@ public class BankAccount{
     if (authenticate(password) && withdraw(amount)){
       if(other.deposit(amount)){
         return true;
+      } else {
+        System.out.println("ERROR! $" + amount +
+          "withdrawn from Account #" + getAccountID() +
+          "Failed to add to Account #" + other.getAccountID());
       }
     }
     return false;

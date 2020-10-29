@@ -22,8 +22,8 @@ public class Tester{
     System.out.println(test.getBalance());      //758.2 = 757.2 + (100 - 9)
     System.out.println(test.withdraw(800));     //false
 
-    System.out.println(test.toString());        //214817  758.2
+    System.out.println(test.toString());        //#214817  $758.2
     System.out.println(test.withdraw(200));     //true
-    System.out.println(test.toString());        //214817  558.2
+    System.out.println(test.toString());        //#214817  $558.2
   }
 }
